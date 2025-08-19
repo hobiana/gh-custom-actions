@@ -68,6 +68,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 # here we need to get the code as the action is not yet referenced in ubuntu-latest and we have to get it from our repo
       - name: Run custom action
         uses: ./.github/actions/deploy-s3-javascript
